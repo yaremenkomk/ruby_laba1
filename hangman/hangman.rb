@@ -26,15 +26,13 @@ while !game_condition_check
 		hangman_word.split('').each_with_index do |letter, letter_index|
 			if user_letter == letter
 				our_word[letter_index] = letter
-				guessed = false
-			else	
+				guessed = false	
 			end 
 		end 
 
 		if guessed == true
 		puts "Wrong letter :#{user_letter}" 
 			attempts -= 1
-		else
 		end	
 	else  
 		puts "Sorry. You lose. The word is: #{hangman_word}"	
@@ -44,7 +42,6 @@ while !game_condition_check
 	if !our_word.include? "_"
 		puts " You win. The finish word is: #{hangman_word}"
 		game_condition_check = true
-	else
 	end
 
 end

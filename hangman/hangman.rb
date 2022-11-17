@@ -26,7 +26,7 @@ while !game_condition_check
 		hangman_word.split('').each_with_index do |letter, letter_index|
 			if user_letter == letter
 				our_word[letter_index] = letter
-				guessed = false	
+				guessed = false
 			end 
 		end 
 
